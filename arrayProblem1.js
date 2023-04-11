@@ -1,10 +1,10 @@
 let names=['rahul dravid','sachin tendulkar','virendra sehwag']
 
-//log before conversion
+//log array before conversion
 console.log('Names :',names);
 
 
-//capitalizing First Letter of words
+//1.capitalizing First Letter of words
 const capitalizeWords=(names=[])=>{
    let newNames= names.map((name)=>{
         const [fName,lName]=name.split(' ')
@@ -19,7 +19,7 @@ const capitalizeWords=(names=[])=>{
 let newNames = capitalizeWords(names)
 console.log('Capitalized array :' , newNames);
 
-//* Removing sachin tendulkar from the array where the index is unknown
+//*2. Removing Sachin Tendulkar from the array where the index is unknown
 const removeName=(newNames=[])=>{
     let removed=newNames.filter((name)=>(name!=='Sachin Tendulkar'))
     return removed
