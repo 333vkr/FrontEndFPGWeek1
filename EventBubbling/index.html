@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <style>
+      body {
+        padding: 20px;
+        background-color: pink;
+      }
+
+      div {
+        padding: 20px;
+        background-color: green;
+        width: max-content;
+      }
+
+      span {
+        display: block;
+        padding: 20px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>
+        <button>Click</button>
+      </span>
+    </div>
+
+    <script src="./eventBubblingAndEventCapturing.js"></script>
+  </body>
+</html>
